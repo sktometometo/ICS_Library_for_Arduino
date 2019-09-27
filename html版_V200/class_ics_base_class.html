@@ -1,0 +1,1105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.12"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>IcsClass: IcsBaseClass クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">IcsClass
+   &#160;<span id="projectnumber">2.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.12 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pub-static-attribs">静的公開変数類</a> &#124;
+<a href="#pro-methods">限定公開メンバ関数</a> &#124;
+<a href="#pro-static-attribs">静的限定公開変数類</a> &#124;
+<a href="class_ics_base_class-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">IcsBaseClass クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>近藤科学のICS 3.5/3.6 サーボモータをマイコン経由で動作させるための基クラス  
+ <a href="class_ics_base_class.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_ics_base_class_8h_source.html">IcsBaseClass.h</a>&gt;</code></p>
+<div class="dynheader">
+IcsBaseClass の継承関係図</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_ics_base_class.png" usemap="#IcsBaseClass_map" alt=""/>
+  <map id="IcsBaseClass_map" name="IcsBaseClass_map">
+<area href="class_ics_hard_serial_class.html" title="近藤科学のKRSサーボをArduinoのHardwareSerialからアクセスできるようにしたクラス " alt="IcsHardSerialClass" shape="rect" coords="0,56,120,80"/>
+<area href="class_ics_soft_serial_class.html" title="近藤科学のKRSサーボをArduinoのSoftwareSerialからアクセスできるようにしたクラス " alt="IcsSoftSerialClass" shape="rect" coords="130,56,250,80"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:aff23ddf3841b002b1119e3df18c05595"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ics_base_class.html#aff23ddf3841b002b1119e3df18c05595">synchronize</a> (byte *txBuf, byte txLen, byte *rxBuf, byte rxLen)</td></tr>
+<tr class="memdesc:aff23ddf3841b002b1119e3df18c05595"><td class="mdescLeft">&#160;</td><td class="mdescRight">ICS通信の送受信  <a href="#aff23ddf3841b002b1119e3df18c05595">[詳解]</a><br /></td></tr>
+<tr class="separator:aff23ddf3841b002b1119e3df18c05595"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeba566c31b4cfa8ab0c4f2c40c1eae3f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ics_base_class.html#aeba566c31b4cfa8ab0c4f2c40c1eae3f">setPos</a> (byte id, unsigned int pos)</td></tr>
+<tr class="memdesc:aeba566c31b4cfa8ab0c4f2c40c1eae3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">サーボモータの角度を変更します  <a href="#aeba566c31b4cfa8ab0c4f2c40c1eae3f">[詳解]</a><br /></td></tr>
+<tr class="separator:aeba566c31b4cfa8ab0c4f2c40c1eae3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82a5c8b957d130cd58273396286f5330"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ics_base_class.html#a82a5c8b957d130cd58273396286f5330">setFree</a> (byte id)</td></tr>
+<tr class="memdesc:a82a5c8b957d130cd58273396286f5330"><td class="mdescLeft">&#160;</td><td class="mdescRight">サーボモータをフリー(脱力)状態にします  <a href="#a82a5c8b957d130cd58273396286f5330">[詳解]</a><br /></td></tr>
+<tr class="separator:a82a5c8b957d130cd58273396286f5330"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae77ec714ecd702e216601f94cf604a91"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ics_base_class.html#ae77ec714ecd702e216601f94cf604a91">setStrc</a> (byte id, unsigned int strc)</td></tr>
+<tr class="memdesc:ae77ec714ecd702e216601f94cf604a91"><td class="mdescLeft">&#160;</td><td class="mdescRight">サーボモータのストレッチ(保持力)の値を書き込みます  <a href="#ae77ec714ecd702e216601f94cf604a91">[詳解]</a><br /></td></tr>
+<tr class="separator:ae77ec714ecd702e216601f94cf604a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebf7c25060e70071bcc99cecdbd13b27"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ics_base_class.html#aebf7c25060e70071bcc99cecdbd13b27">setSpd</a> (byte id, unsigned int spd)</td></tr>
+<tr class="memdesc:aebf7c25060e70071bcc99cecdbd13b27"><td class="mdescLeft">&#160;</td><td class="mdescRight">サーボモータのスピード(出力)を変更します  <a href="#aebf7c25060e70071bcc99cecdbd13b27">[詳解]</a><br /></td></tr>
+<tr class="separator:aebf7c25060e70071bcc99cecdbd13b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1572f719c59c670fa1b6486234588df2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ics_base_class.html#a1572f719c59c670fa1b6486234588df2">setCur</a> (byte id, unsigned int curlim)</td></tr>
+<tr class="memdesc:a1572f719c59c670fa1b6486234588df2"><td class="mdescLeft">&#160;</td><td class="mdescRight">サーボモータの電流リミット（電流制限）値を変更します  <a href="#a1572f719c59c670fa1b6486234588df2">[詳解]</a><br /></td></tr>
+<tr class="separator:a1572f719c59c670fa1b6486234588df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64424a0de85d7d6ffeaba80c4cdae61d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ics_base_class.html#a64424a0de85d7d6ffeaba80c4cdae61d">setTmp</a> (byte id, unsigned int tmplim)</td></tr>
+<tr class="memdesc:a64424a0de85d7d6ffeaba80c4cdae61d"><td class="mdescLeft">&#160;</td><td class="mdescRight">サーボモータの温度リミット（温度制限）値を変更します  <a href="#a64424a0de85d7d6ffeaba80c4cdae61d">[詳解]</a><br /></td></tr>
+<tr class="separator:a64424a0de85d7d6ffeaba80c4cdae61d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52fd35cf3a68fd11c3d0170e4b021c8c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ics_base_class.html#a52fd35cf3a68fd11c3d0170e4b021c8c">getStrc</a> (byte id)</td></tr>
+<tr class="memdesc:a52fd35cf3a68fd11c3d0170e4b021c8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">サーボモータのストレッチ(保持力)の値を読み込みます  <a href="#a52fd35cf3a68fd11c3d0170e4b021c8c">[詳解]</a><br /></td></tr>
+<tr class="separator:a52fd35cf3a68fd11c3d0170e4b021c8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0280c0ad836ff1804d32d30679bac07c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ics_base_class.html#a0280c0ad836ff1804d32d30679bac07c">getSpd</a> (byte id)</td></tr>
+<tr class="memdesc:a0280c0ad836ff1804d32d30679bac07c"><td class="mdescLeft">&#160;</td><td class="mdescRight">サーボモータのスピード(出力)を読み込みます  <a href="#a0280c0ad836ff1804d32d30679bac07c">[詳解]</a><br /></td></tr>
+<tr class="separator:a0280c0ad836ff1804d32d30679bac07c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81056155be8f6b9980a8f6a1b434d6f1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ics_base_class.html#a81056155be8f6b9980a8f6a1b434d6f1">getCur</a> (byte id)</td></tr>
+<tr class="memdesc:a81056155be8f6b9980a8f6a1b434d6f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">サーボモータの現在の電流値を読み込みます  <a href="#a81056155be8f6b9980a8f6a1b434d6f1">[詳解]</a><br /></td></tr>
+<tr class="separator:a81056155be8f6b9980a8f6a1b434d6f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4581c41259acae167d0185420e5cb5e5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ics_base_class.html#a4581c41259acae167d0185420e5cb5e5">getTmp</a> (byte id)</td></tr>
+<tr class="memdesc:a4581c41259acae167d0185420e5cb5e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">サーボモータの現在の温度値を読み込みます  <a href="#a4581c41259acae167d0185420e5cb5e5">[詳解]</a><br /></td></tr>
+<tr class="separator:a4581c41259acae167d0185420e5cb5e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9481264d4a519c71f481d401e8269e1f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ics_base_class.html#a9481264d4a519c71f481d401e8269e1f">getPos</a> (byte id)</td></tr>
+<tr class="memdesc:a9481264d4a519c71f481d401e8269e1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">サーボモータの現在のポジションデータを読み込みます  <a href="#a9481264d4a519c71f481d401e8269e1f">[詳解]</a><br /></td></tr>
+<tr class="separator:a9481264d4a519c71f481d401e8269e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1d5dc1b0eac22ff330e28820e9b0789"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ics_base_class.html#ad1d5dc1b0eac22ff330e28820e9b0789">getKrrButton</a> ()</td></tr>
+<tr class="memdesc:ad1d5dc1b0eac22ff330e28820e9b0789"><td class="mdescLeft">&#160;</td><td class="mdescRight">KRRが受信しているボタンのデータを取得します  <a href="#ad1d5dc1b0eac22ff330e28820e9b0789">[詳解]</a><br /></td></tr>
+<tr class="separator:ad1d5dc1b0eac22ff330e28820e9b0789"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a045bff81159900039007a3aa33baabb0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ics_base_class.html#a045bff81159900039007a3aa33baabb0">getKrrAnalog</a> (int paCh)</td></tr>
+<tr class="memdesc:a045bff81159900039007a3aa33baabb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">KRRが受信している指定したアナログポート(PA)のデータを取得します  <a href="#a045bff81159900039007a3aa33baabb0">[詳解]</a><br /></td></tr>
+<tr class="separator:a045bff81159900039007a3aa33baabb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e190b4393f484fb968ed53e66f3d1dd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ics_base_class.html#a5e190b4393f484fb968ed53e66f3d1dd">getKrrAllData</a> (unsigned short *button, int adData[4])</td></tr>
+<tr class="memdesc:a5e190b4393f484fb968ed53e66f3d1dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">KRRが受信しているボタンデータおよびアナログポート(PA)のデータをすべて取得します  <a href="#a5e190b4393f484fb968ed53e66f3d1dd">[詳解]</a><br /></td></tr>
+<tr class="separator:a5e190b4393f484fb968ed53e66f3d1dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:a692813562a1fce2bc001e503deb4ea62"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ics_base_class.html#a692813562a1fce2bc001e503deb4ea62">degPos</a> (float deg)</td></tr>
+<tr class="memdesc:a692813562a1fce2bc001e503deb4ea62"><td class="mdescLeft">&#160;</td><td class="mdescRight">角度データ(float型)をポジションデータに変換  <a href="#a692813562a1fce2bc001e503deb4ea62">[詳解]</a><br /></td></tr>
+<tr class="separator:a692813562a1fce2bc001e503deb4ea62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab93748f45c198b388232f7f18fa328eb"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ics_base_class.html#ab93748f45c198b388232f7f18fa328eb">posDeg</a> (int pos)</td></tr>
+<tr class="memdesc:ab93748f45c198b388232f7f18fa328eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">ポジションデータを角度データ(float型)に変換  <a href="#ab93748f45c198b388232f7f18fa328eb">[詳解]</a><br /></td></tr>
+<tr class="separator:ab93748f45c198b388232f7f18fa328eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a980ee6759c3cd4a9d5deaa7667d17814"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ics_base_class.html#a980ee6759c3cd4a9d5deaa7667d17814">degPos100</a> (int deg)</td></tr>
+<tr class="memdesc:a980ee6759c3cd4a9d5deaa7667d17814"><td class="mdescLeft">&#160;</td><td class="mdescRight">角度データx100(int型)をポジションデータに変換  <a href="#a980ee6759c3cd4a9d5deaa7667d17814">[詳解]</a><br /></td></tr>
+<tr class="separator:a980ee6759c3cd4a9d5deaa7667d17814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c2d22bbba062ffe8d0cc07f0e8f32a4"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ics_base_class.html#a3c2d22bbba062ffe8d0cc07f0e8f32a4">posDeg100</a> (int pos)</td></tr>
+<tr class="memdesc:a3c2d22bbba062ffe8d0cc07f0e8f32a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">ポジションデータを角度データ(int型)に変換  <a href="#a3c2d22bbba062ffe8d0cc07f0e8f32a4">[詳解]</a><br /></td></tr>
+<tr class="separator:a3c2d22bbba062ffe8d0cc07f0e8f32a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+静的公開変数類</h2></td></tr>
+<tr class="memitem:a844e3a0761dc669080c3994591a62b33"><td class="memItemLeft" align="right" valign="top"><a id="a844e3a0761dc669080c3994591a62b33"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ics_base_class.html#a844e3a0761dc669080c3994591a62b33">MAX_ID</a> = 31</td></tr>
+<tr class="memdesc:a844e3a0761dc669080c3994591a62b33"><td class="mdescLeft">&#160;</td><td class="mdescRight">サーボIDの最大値 <br /></td></tr>
+<tr class="separator:a844e3a0761dc669080c3994591a62b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30f2d871513c227175d9719024ae46cf"><td class="memItemLeft" align="right" valign="top"><a id="a30f2d871513c227175d9719024ae46cf"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ics_base_class.html#a30f2d871513c227175d9719024ae46cf">MIN_ID</a> = 0</td></tr>
+<tr class="memdesc:a30f2d871513c227175d9719024ae46cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">サーボIDの最小値 <br /></td></tr>
+<tr class="separator:a30f2d871513c227175d9719024ae46cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dcdcd4648f871217413f1aa2f2d798f"><td class="memItemLeft" align="right" valign="top"><a id="a1dcdcd4648f871217413f1aa2f2d798f"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ics_base_class.html#a1dcdcd4648f871217413f1aa2f2d798f">MAX_POS</a> = 11500</td></tr>
+<tr class="memdesc:a1dcdcd4648f871217413f1aa2f2d798f"><td class="mdescLeft">&#160;</td><td class="mdescRight">サーボのポジション最大値 <br /></td></tr>
+<tr class="separator:a1dcdcd4648f871217413f1aa2f2d798f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d11c7e9e3f2f7fe8a03f3a4fc0d94d3"><td class="memItemLeft" align="right" valign="top"><a id="a2d11c7e9e3f2f7fe8a03f3a4fc0d94d3"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ics_base_class.html#a2d11c7e9e3f2f7fe8a03f3a4fc0d94d3">MIN_POS</a> = 3500</td></tr>
+<tr class="memdesc:a2d11c7e9e3f2f7fe8a03f3a4fc0d94d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">サーボのポジション最小値 <br /></td></tr>
+<tr class="separator:a2d11c7e9e3f2f7fe8a03f3a4fc0d94d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7f1cdd2c06399b2c744725250bc0dc6"><td class="memItemLeft" align="right" valign="top"><a id="ab7f1cdd2c06399b2c744725250bc0dc6"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ics_base_class.html#ab7f1cdd2c06399b2c744725250bc0dc6">ICS_FALSE</a> = -1</td></tr>
+<tr class="memdesc:ab7f1cdd2c06399b2c744725250bc0dc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">ICS通信等々で失敗したときの値 <br /></td></tr>
+<tr class="separator:ab7f1cdd2c06399b2c744725250bc0dc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:af68f297eabf6192997002d2a4c7f5219"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ics_base_class.html#af68f297eabf6192997002d2a4c7f5219">idMax</a> (byte id)</td></tr>
+<tr class="memdesc:af68f297eabf6192997002d2a4c7f5219"><td class="mdescLeft">&#160;</td><td class="mdescRight">サーボIDが範囲内か見る  <a href="#af68f297eabf6192997002d2a4c7f5219">[詳解]</a><br /></td></tr>
+<tr class="separator:af68f297eabf6192997002d2a4c7f5219"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1652533b9f6f644e549d663e58a70d7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ics_base_class.html#aa1652533b9f6f644e549d663e58a70d7">maxMin</a> (int maxPos, int minPos, int val)</td></tr>
+<tr class="memdesc:aa1652533b9f6f644e549d663e58a70d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">ポジションデータの最大、最小値の範囲に収める  <a href="#aa1652533b9f6f644e549d663e58a70d7">[詳解]</a><br /></td></tr>
+<tr class="separator:aa1652533b9f6f644e549d663e58a70d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
+静的限定公開変数類</h2></td></tr>
+<tr class="memitem:a2807c54ae3f2461649636e8fe2c8cbaa"><td class="memItemLeft" align="right" valign="top"><a id="a2807c54ae3f2461649636e8fe2c8cbaa"></a>
+static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ics_base_class.html#a2807c54ae3f2461649636e8fe2c8cbaa">ANGLE_F_FALSE</a> = 9999.9</td></tr>
+<tr class="memdesc:a2807c54ae3f2461649636e8fe2c8cbaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">角度計算時、範囲内に入ってない場合は999.9にする(負側の場合はマイナスをつける) <br /></td></tr>
+<tr class="separator:a2807c54ae3f2461649636e8fe2c8cbaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc399ff210a01e230da3ae27fdd3a46d"><td class="memItemLeft" align="right" valign="top"><a id="acc399ff210a01e230da3ae27fdd3a46d"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ics_base_class.html#acc399ff210a01e230da3ae27fdd3a46d">ANGLE_I_FALSE</a> = 0x7FFF</td></tr>
+<tr class="memdesc:acc399ff210a01e230da3ae27fdd3a46d"><td class="mdescLeft">&#160;</td><td class="mdescRight">角度計算時、範囲内に入ってない場合は0x7FFFにする(負側の場合はマイナスをつける) <br /></td></tr>
+<tr class="separator:acc399ff210a01e230da3ae27fdd3a46d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab04f6d9c1149e6881da40d4d59dc19ae"><td class="memItemLeft" align="right" valign="top"><a id="ab04f6d9c1149e6881da40d4d59dc19ae"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ics_base_class.html#ab04f6d9c1149e6881da40d4d59dc19ae">MAX_127</a> = 127</td></tr>
+<tr class="memdesc:ab04f6d9c1149e6881da40d4d59dc19ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">パラメータの最大値 <br /></td></tr>
+<tr class="separator:ab04f6d9c1149e6881da40d4d59dc19ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace2f5ea69ed80b314736c31d809d4d83"><td class="memItemLeft" align="right" valign="top"><a id="ace2f5ea69ed80b314736c31d809d4d83"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ics_base_class.html#ace2f5ea69ed80b314736c31d809d4d83">MAX_63</a> = 63</td></tr>
+<tr class="memdesc:ace2f5ea69ed80b314736c31d809d4d83"><td class="mdescLeft">&#160;</td><td class="mdescRight">パラメータの最大値(電流値) <br /></td></tr>
+<tr class="separator:ace2f5ea69ed80b314736c31d809d4d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a031d39c34990d503f17c469663e99c17"><td class="memItemLeft" align="right" valign="top"><a id="a031d39c34990d503f17c469663e99c17"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ics_base_class.html#a031d39c34990d503f17c469663e99c17">MIN_1</a> = 1</td></tr>
+<tr class="memdesc:a031d39c34990d503f17c469663e99c17"><td class="mdescLeft">&#160;</td><td class="mdescRight">パラメータの最小値 <br /></td></tr>
+<tr class="separator:a031d39c34990d503f17c469663e99c17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5220b96416525e0f68f9fb0e234a9826"><td class="memItemLeft" align="right" valign="top"><a id="a5220b96416525e0f68f9fb0e234a9826"></a>
+static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ics_base_class.html#a5220b96416525e0f68f9fb0e234a9826">MAX_DEG</a> = 180.0</td></tr>
+<tr class="memdesc:a5220b96416525e0f68f9fb0e234a9826"><td class="mdescLeft">&#160;</td><td class="mdescRight">角度の最大値 <br /></td></tr>
+<tr class="separator:a5220b96416525e0f68f9fb0e234a9826"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab227ed76fc6896e8be287a8a0ff45280"><td class="memItemLeft" align="right" valign="top"><a id="ab227ed76fc6896e8be287a8a0ff45280"></a>
+static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ics_base_class.html#ab227ed76fc6896e8be287a8a0ff45280">MIN_DEG</a> = -180.0</td></tr>
+<tr class="memdesc:ab227ed76fc6896e8be287a8a0ff45280"><td class="mdescLeft">&#160;</td><td class="mdescRight">角度の最大値 <br /></td></tr>
+<tr class="separator:ab227ed76fc6896e8be287a8a0ff45280"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf77d82a2b8e1d64c90456fbc488ef8c"><td class="memItemLeft" align="right" valign="top"><a id="adf77d82a2b8e1d64c90456fbc488ef8c"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ics_base_class.html#adf77d82a2b8e1d64c90456fbc488ef8c">MAX_100DEG</a> = 18000</td></tr>
+<tr class="memdesc:adf77d82a2b8e1d64c90456fbc488ef8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">角度(x100)の最大値 <br /></td></tr>
+<tr class="separator:adf77d82a2b8e1d64c90456fbc488ef8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01da4a480450a9b74a5f297a92574162"><td class="memItemLeft" align="right" valign="top"><a id="a01da4a480450a9b74a5f297a92574162"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ics_base_class.html#a01da4a480450a9b74a5f297a92574162">MIN_100DEG</a> = -18000</td></tr>
+<tr class="memdesc:a01da4a480450a9b74a5f297a92574162"><td class="mdescLeft">&#160;</td><td class="mdescRight">角度(x100)の最小値 <br /></td></tr>
+<tr class="separator:a01da4a480450a9b74a5f297a92574162"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>近藤科学のICS 3.5/3.6 サーボモータをマイコン経由で動作させるための基クラス </p>
+<p>Arduino用にHardwareSerial,SoftwareSerialが使えるように基クラスを作成 </p>
+</div><h2 class="groupheader">関数詳解</h2>
+<a id="a692813562a1fce2bc001e503deb4ea62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a692813562a1fce2bc001e503deb4ea62">&sect;&nbsp;</a></span>degPos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IcsBaseClass::degPos </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>deg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>角度データ(float型)をポジションデータに変換 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">deg</td><td>角度(deg)(float型) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>ポジションデータ </dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">-1</td><td>範囲外 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a980ee6759c3cd4a9d5deaa7667d17814"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a980ee6759c3cd4a9d5deaa7667d17814">&sect;&nbsp;</a></span>degPos100()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IcsBaseClass::degPos100 </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>deg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>角度データx100(int型)をポジションデータに変換 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">deg</td><td>角度(deg x100)(int型) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>変換されたポジションデータ </dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">-1</td><td>範囲外 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a81056155be8f6b9980a8f6a1b434d6f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81056155be8f6b9980a8f6a1b434d6f1">&sect;&nbsp;</a></span>getCur()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IcsBaseClass::getCur </td>
+          <td>(</td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>サーボモータの現在の電流値を読み込みます </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>サーボモータのID番号 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>サーボモータの現在の電流値 </dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">-1</td><td>通信失敗 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>覚え書き</dt><dd>電流値読込 正転時0～63、逆転時64～127 </dd></dl>
+
+</div>
+</div>
+<a id="a5e190b4393f484fb968ed53e66f3d1dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e190b4393f484fb968ed53e66f3d1dd">&sect;&nbsp;</a></span>getKrrAllData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IcsBaseClass::getKrrAllData </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short *&#160;</td>
+          <td class="paramname"><em>button</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>adData</em>[4]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>KRRが受信しているボタンデータおよびアナログポート(PA)のデータをすべて取得します </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">button</td><td>ボタンデータ(<a class="el" href="_ics_base_class_8h.html#a1ccd4ccd38a42a8e294a317295daa1b6" title="KRRが受信するボタンデータの定義 ">KRR_BUTTON</a> を参照) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">adData</td><td>4ch分のアナログデータ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ture</td><td>通信成功 </td></tr>
+    <tr><td class="paramname">false</td><td>通信失敗 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>KRC5のアナログポートは1～4になります </dd>
+<dd>
+配列サイズは4固定です </dd></dl>
+
+</div>
+</div>
+<a id="a045bff81159900039007a3aa33baabb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a045bff81159900039007a3aa33baabb0">&sect;&nbsp;</a></span>getKrrAnalog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IcsBaseClass::getKrrAnalog </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>paCh</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>KRRが受信している指定したアナログポート(PA)のデータを取得します </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">paCh</td><td>アナログポートの番号 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>指定したアナログポートのデータ </dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">-1</td><td>通信失敗 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>KRC5のアナログポートは1～4になります </dd></dl>
+
+</div>
+</div>
+<a id="ad1d5dc1b0eac22ff330e28820e9b0789"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1d5dc1b0eac22ff330e28820e9b0789">&sect;&nbsp;</a></span>getKrrButton()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short IcsBaseClass::getKrrButton </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>KRRが受信しているボタンのデータを取得します </p>
+<dl class="section return"><dt>戻り値</dt><dd><a class="el" href="_ics_base_class_8h.html#a1ccd4ccd38a42a8e294a317295daa1b6" title="KRRが受信するボタンデータの定義 ">KRR_BUTTON</a> を参照 </dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">-1</td><td>通信失敗 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9481264d4a519c71f481d401e8269e1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9481264d4a519c71f481d401e8269e1f">&sect;&nbsp;</a></span>getPos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IcsBaseClass::getPos </td>
+          <td>(</td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>サーボモータの現在のポジションデータを読み込みます </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>サーボモータのID番号 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>指定したIDの現在のポジションデータ </dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">-1</td><td>通信失敗 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>ICS3.6から有効です。ICS3.5のサーボモータに送った場合は返事を返しません </dd></dl>
+
+</div>
+</div>
+<a id="a0280c0ad836ff1804d32d30679bac07c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0280c0ad836ff1804d32d30679bac07c">&sect;&nbsp;</a></span>getSpd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IcsBaseClass::getSpd </td>
+          <td>(</td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>サーボモータのスピード(出力)を読み込みます </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>サーボモータのID番号 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>読み込んだスピードのデータ </dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">-1</td><td>通信失敗 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>覚え書き</dt><dd>スピード読込 1～127 1(遅い) 127(速い) </dd></dl>
+
+</div>
+</div>
+<a id="a52fd35cf3a68fd11c3d0170e4b021c8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52fd35cf3a68fd11c3d0170e4b021c8c">&sect;&nbsp;</a></span>getStrc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IcsBaseClass::getStrc </td>
+          <td>(</td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>サーボモータのストレッチ(保持力)の値を読み込みます </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>サーボモータのID番号 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>読み込んだストレッチのデータ </dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">-1</td><td>通信失敗 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>覚え書き</dt><dd>ストレッチ読込 1～127 1(弱） 127(強） </dd></dl>
+
+</div>
+</div>
+<a id="a4581c41259acae167d0185420e5cb5e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4581c41259acae167d0185420e5cb5e5">&sect;&nbsp;</a></span>getTmp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IcsBaseClass::getTmp </td>
+          <td>(</td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>サーボモータの現在の温度値を読み込みます </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>サーボモータのID番号 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>サーボモータの現在の温度値 </dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">-1</td><td>通信失敗 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>覚え書き</dt><dd>現在温度読込 0(高温) ～ 127(低温 </dd></dl>
+
+</div>
+</div>
+<a id="af68f297eabf6192997002d2a4c7f5219"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af68f297eabf6192997002d2a4c7f5219">&sect;&nbsp;</a></span>idMax()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte IcsBaseClass::idMax </td>
+          <td>(</td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>サーボIDが範囲内か見る </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>送られてきたid </dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0xFF</td><td>範囲外 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa1652533b9f6f644e549d663e58a70d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1652533b9f6f644e549d663e58a70d7">&sect;&nbsp;</a></span>maxMin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IcsBaseClass::maxMin </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxPos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>minPos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ポジションデータの最大、最小値の範囲に収める </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxPos</td><td>最大値 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">minPos</td><td>最小値 </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">val</td><td>現在値 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>リミットがかかったポジションデータ </dd></dl>
+
+</div>
+</div>
+<a id="ab93748f45c198b388232f7f18fa328eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab93748f45c198b388232f7f18fa328eb">&sect;&nbsp;</a></span>posDeg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float IcsBaseClass::posDeg </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ポジションデータを角度データ(float型)に変換 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pos</td><td>ポジションデータ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>角度(deg)(float型) </dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="class_ics_base_class.html#a2807c54ae3f2461649636e8fe2c8cbaa" title="角度計算時、範囲内に入ってない場合は999.9にする(負側の場合はマイナスをつける) ">ANGLE_F_FALSE</a></td><td>正方向範囲外 </td></tr>
+    <tr><td class="paramname">-::ANGLE_F_FALSE</td><td>(0x8000) 負方向範囲外 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3c2d22bbba062ffe8d0cc07f0e8f32a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c2d22bbba062ffe8d0cc07f0e8f32a4">&sect;&nbsp;</a></span>posDeg100()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IcsBaseClass::posDeg100 </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ポジションデータを角度データ(int型)に変換 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pos</td><td>ポジションデータ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>角度(deg x100)(int型) </dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="class_ics_base_class.html#acc399ff210a01e230da3ae27fdd3a46d" title="角度計算時、範囲内に入ってない場合は0x7FFFにする(負側の場合はマイナスをつける) ">ANGLE_I_FALSE</a></td><td>正方向範囲外 </td></tr>
+    <tr><td class="paramname">-::ANGLE_I_FALSE</td><td>負方向範囲外 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1572f719c59c670fa1b6486234588df2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1572f719c59c670fa1b6486234588df2">&sect;&nbsp;</a></span>setCur()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IcsBaseClass::setCur </td>
+          <td>(</td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>curlim</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>サーボモータの電流リミット（電流制限）値を変更します </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>サーボモータのID番号 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">curlim</td><td>電流値のデータ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>サーボモータの電流リミット値 </dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">-1</td><td>通信失敗 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>覚え書き</dt><dd>電流制限値書込 1～63 1(低い) 63 (高い) </dd></dl>
+
+</div>
+</div>
+<a id="a82a5c8b957d130cd58273396286f5330"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82a5c8b957d130cd58273396286f5330">&sect;&nbsp;</a></span>setFree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IcsBaseClass::setFree </td>
+          <td>(</td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>サーボモータをフリー(脱力)状態にします </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>サーボモータのID番号 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>ポジションデータ </dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">-1</td><td>範囲外、通信失敗 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aeba566c31b4cfa8ab0c4f2c40c1eae3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeba566c31b4cfa8ab0c4f2c40c1eae3f">&sect;&nbsp;</a></span>setPos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IcsBaseClass::setPos </td>
+          <td>(</td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>pos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>サーボモータの角度を変更します </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>サーボモータのID番号 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pos</td><td>ポジションデータ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>ポジションデータ </dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">-1</td><td>範囲外、通信失敗 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aebf7c25060e70071bcc99cecdbd13b27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebf7c25060e70071bcc99cecdbd13b27">&sect;&nbsp;</a></span>setSpd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IcsBaseClass::setSpd </td>
+          <td>(</td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>spd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>サーボモータのスピード(出力)を変更します </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>サーボモータのID番号 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">spd</td><td>スピードのデータ(1～127) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>書き込んだスピードのデータ </dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">-1</td><td>通信失敗 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>覚え書き</dt><dd>スピード書込 1～127 1(遅い) 127(速い) </dd></dl>
+
+</div>
+</div>
+<a id="ae77ec714ecd702e216601f94cf604a91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae77ec714ecd702e216601f94cf604a91">&sect;&nbsp;</a></span>setStrc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IcsBaseClass::setStrc </td>
+          <td>(</td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>strc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>サーボモータのストレッチ(保持力)の値を書き込みます </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>サーボモータのID番号 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">strc</td><td>ストレッチのデータ(1～127) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>書き込んだストレッチのデータ </dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">-1</td><td>通信失敗 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>覚え書き</dt><dd>ストレッチ書込 1～127 1(弱） 127(強） </dd></dl>
+
+</div>
+</div>
+<a id="a64424a0de85d7d6ffeaba80c4cdae61d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64424a0de85d7d6ffeaba80c4cdae61d">&sect;&nbsp;</a></span>setTmp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IcsBaseClass::setTmp </td>
+          <td>(</td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>tmplim</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>サーボモータの温度リミット（温度制限）値を変更します </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>サーボモータのID番号 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tmplim</td><td>温度リミット値のデータ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>サーボモータの温度リミット値 </dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">-1</td><td>通信失敗 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>覚え書き</dt><dd>温度上限書込 1～127 127(低温） 1(高温) </dd></dl>
+
+</div>
+</div>
+<a id="aff23ddf3841b002b1119e3df18c05595"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff23ddf3841b002b1119e3df18c05595">&sect;&nbsp;</a></span>synchronize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool IcsBaseClass::synchronize </td>
+          <td>(</td>
+          <td class="paramtype">byte *&#160;</td>
+          <td class="paramname"><em>txBuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>txLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte *&#160;</td>
+          <td class="paramname"><em>rxBuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>rxLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ICS通信の送受信 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">*txBuf</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">txLen</td><td></td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*rxBuf</td><td>受信格納バッファ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rxLen</td><td>受信データ数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">true</td><td>通信成功 </td></tr>
+    <tr><td class="paramname">false</td><td>通信失敗 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>送信データ数、受信データ数はコマンドによって違うので注意する </dd>
+<dd>
+この関数は外部に書く事 </dd></dl>
+
+<p><a class="el" href="class_ics_hard_serial_class.html#a007c75bbba5b846897d261b0c91f15e3">IcsHardSerialClass</a>, <a class="el" href="class_ics_soft_serial_class.html#afd46b796d368cb7cba51c6bac0d2d864">IcsSoftSerialClass</a>で再実装されています。</p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/kedtn/Documents/Arduino/libraries/IcsClass_V200/<a class="el" href="_ics_base_class_8h_source.html">IcsBaseClass.h</a></li>
+<li>C:/Users/kedtn/Documents/Arduino/libraries/IcsClass_V200/<a class="el" href="_ics_base_class_8cpp.html">IcsBaseClass.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
+</body>
+</html>

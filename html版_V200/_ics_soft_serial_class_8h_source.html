@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.12"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>IcsClass: C:/Users/kedtn/Documents/Arduino/libraries/IcsSoftSerialClass_V200/IcsSoftSerialClass.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">IcsClass
+   &#160;<span id="projectnumber">2.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.12 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_a991eec27578c865874ede3d8ec657c2.html">Arduino</a></li><li class="navelem"><a class="el" href="dir_481cc946b8a81b8d9363a4aad6201160.html">libraries</a></li><li class="navelem"><a class="el" href="dir_aaab527518c845f929ce8a832f5792fb.html">IcsSoftSerialClass_V200</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">IcsSoftSerialClass.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_ics_soft_serial_class_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#ifndef _ics_SoftSerial_Servo_h_</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define _ics_SoftSerial_Servo_h_</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">//#include &lt;Arduino.h&gt;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="_ics_base_class_8h.html">IcsBaseClass.h</a>&gt;</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;KoCustamSoftSerial.h&gt;</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">//IcsClassクラス///////////////////////////////////////////////////</span></div><div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_ics_soft_serial_class.html">   29</a></span>&#160;<span class="comment"></span><span class="keyword">class </span><a class="code" href="class_ics_soft_serial_class.html">IcsSoftSerialClass</a> : <span class="keyword">public</span> <a class="code" href="class_ics_base_class.html">IcsBaseClass</a></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="comment">//クラス内の型定義</span></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">public</span>:</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="comment">//コンストラクタ、デストラクタ</span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">public</span>:</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <span class="comment">//コンストラクタ(construncor)</span></div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="class_ics_soft_serial_class.html#a0ec962c2a4b2f98e4f91cbe4976c6541">IcsSoftSerialClass</a>();</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="class_ics_soft_serial_class.html#a0ec962c2a4b2f98e4f91cbe4976c6541">IcsSoftSerialClass</a>(byte rxPin,byte txPin,byte enpin);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="class_ics_soft_serial_class.html#a0ec962c2a4b2f98e4f91cbe4976c6541">IcsSoftSerialClass</a>(byte rxPin,byte txPin,byte enpin, <span class="keywordtype">long</span> baudrate, <span class="keywordtype">int</span> timeout);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="class_ics_soft_serial_class.html#a0ec962c2a4b2f98e4f91cbe4976c6541">IcsSoftSerialClass</a>(KoCustamSoftSerial *koSoftSerial,byte enpin);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="class_ics_soft_serial_class.html#a0ec962c2a4b2f98e4f91cbe4976c6541">IcsSoftSerialClass</a>(KoCustamSoftSerial *koSoftSerial,byte enpin, <span class="keywordtype">long</span> baudrate, <span class="keywordtype">int</span> timeout);</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      </div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <span class="comment">//デストラクタ(destruntor)</span></div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <a class="code" href="class_ics_soft_serial_class.html#a786c912616c9bdc0d547427dd63e8730">~IcsSoftSerialClass</a>();</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  </div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="comment">//変数</span></div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">public</span>:</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">protected</span>: </div><div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_ics_soft_serial_class.html#a6ccaa7ad49b7123a98c78d90c3ae9404">   53</a></span>&#160;    KoCustamSoftSerial *<a class="code" href="class_ics_soft_serial_class.html#a6ccaa7ad49b7123a98c78d90c3ae9404">icsSoftSerial</a>;  </div><div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_ics_soft_serial_class.html#a75e666c1c65a620505396fb52eb7f9e5">   54</a></span>&#160;    byte <a class="code" href="class_ics_soft_serial_class.html#a75e666c1c65a620505396fb52eb7f9e5">g_enpin</a>;         </div><div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_ics_soft_serial_class.html#a961693d6df8386ed3a1a457daca3e13f">   55</a></span>&#160;    <span class="keywordtype">int</span>     <a class="code" href="class_ics_soft_serial_class.html#a961693d6df8386ed3a1a457daca3e13f">g_timeout</a> = 1000;               </div><div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_ics_soft_serial_class.html#a05f152531a378a448261c8f61d975c53">   56</a></span>&#160;    <span class="keywordtype">long</span>    <a class="code" href="class_ics_soft_serial_class.html#a05f152531a378a448261c8f61d975c53">g_baudrate</a> = 115200;            </div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="comment">//関数</span></div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="comment">//通信初期化</span></div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">public</span>:</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_ics_soft_serial_class.html#a9f2d5e67d748426eda81c94806ee8601">begin</a>();</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_ics_soft_serial_class.html#a9f2d5e67d748426eda81c94806ee8601">begin</a>(<span class="keywordtype">long</span> baudrate,<span class="keywordtype">int</span> timeout);</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_ics_soft_serial_class.html#a9f2d5e67d748426eda81c94806ee8601">begin</a>(KoCustamSoftSerial *serial,byte enpin,<span class="keywordtype">long</span> baudrate,<span class="keywordtype">int</span> timeout);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="comment">//イネーブルピンの処理</span></div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">protected</span> : </div><div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="class_ics_soft_serial_class.html#a3c1befd78c2233fbfb8a159b9f6ee62f">   71</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_ics_soft_serial_class.html#a3c1befd78c2233fbfb8a159b9f6ee62f">enHigh</a>(){digitalWrite(g_enpin, HIGH);}</div><div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="class_ics_soft_serial_class.html#af925c2b86e4673aa6b4360bbaf3e55df">   75</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_ics_soft_serial_class.html#af925c2b86e4673aa6b4360bbaf3e55df">enLow</a>(){digitalWrite(g_enpin, LOW);}</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="comment">//データ送受信</span></div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keyword">public</span>:</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_ics_soft_serial_class.html#afd46b796d368cb7cba51c6bac0d2d864">synchronize</a>(byte *txBuf, byte txLen, byte *rxBuf, byte rxLen);</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;   </div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="comment">//servo関連   //すべていっしょ</span></div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keyword">public</span>:</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;};</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif </span></div><div class="ttc" id="class_ics_soft_serial_class_html_a0ec962c2a4b2f98e4f91cbe4976c6541"><div class="ttname"><a href="class_ics_soft_serial_class.html#a0ec962c2a4b2f98e4f91cbe4976c6541">IcsSoftSerialClass::IcsSoftSerialClass</a></div><div class="ttdeci">IcsSoftSerialClass()</div><div class="ttdoc">コンストラクタ </div><div class="ttdef"><b>Definition:</b> IcsSoftSerialClass.cpp:19</div></div>
+<div class="ttc" id="class_ics_soft_serial_class_html_a961693d6df8386ed3a1a457daca3e13f"><div class="ttname"><a href="class_ics_soft_serial_class.html#a961693d6df8386ed3a1a457daca3e13f">IcsSoftSerialClass::g_timeout</a></div><div class="ttdeci">int g_timeout</div><div class="ttdoc">タイムアウトの設定を格納しておく変数 </div><div class="ttdef"><b>Definition:</b> IcsSoftSerialClass.h:55</div></div>
+<div class="ttc" id="class_ics_soft_serial_class_html_a786c912616c9bdc0d547427dd63e8730"><div class="ttname"><a href="class_ics_soft_serial_class.html#a786c912616c9bdc0d547427dd63e8730">IcsSoftSerialClass::~IcsSoftSerialClass</a></div><div class="ttdeci">~IcsSoftSerialClass()</div><div class="ttdoc">デストラクタ </div><div class="ttdef"><b>Definition:</b> IcsSoftSerialClass.cpp:94</div></div>
+<div class="ttc" id="class_ics_soft_serial_class_html"><div class="ttname"><a href="class_ics_soft_serial_class.html">IcsSoftSerialClass</a></div><div class="ttdoc">近藤科学のKRSサーボをArduinoのSoftwareSerialからアクセスできるようにしたクラス </div><div class="ttdef"><b>Definition:</b> IcsSoftSerialClass.h:29</div></div>
+<div class="ttc" id="class_ics_soft_serial_class_html_af925c2b86e4673aa6b4360bbaf3e55df"><div class="ttname"><a href="class_ics_soft_serial_class.html#af925c2b86e4673aa6b4360bbaf3e55df">IcsSoftSerialClass::enLow</a></div><div class="ttdeci">void enLow()</div><div class="ttdoc">enPinに割り当てられているピンをLにする </div><div class="ttdef"><b>Definition:</b> IcsSoftSerialClass.h:75</div></div>
+<div class="ttc" id="class_ics_soft_serial_class_html_a05f152531a378a448261c8f61d975c53"><div class="ttname"><a href="class_ics_soft_serial_class.html#a05f152531a378a448261c8f61d975c53">IcsSoftSerialClass::g_baudrate</a></div><div class="ttdeci">long g_baudrate</div><div class="ttdoc">通信速度の設定を格納しておく変数 </div><div class="ttdef"><b>Definition:</b> IcsSoftSerialClass.h:56</div></div>
+<div class="ttc" id="_ics_base_class_8h_html"><div class="ttname"><a href="_ics_base_class_8h.html">IcsBaseClass.h</a></div><div class="ttdoc">ICS3.5/3.6 bace library header file </div></div>
+<div class="ttc" id="class_ics_soft_serial_class_html_a75e666c1c65a620505396fb52eb7f9e5"><div class="ttname"><a href="class_ics_soft_serial_class.html#a75e666c1c65a620505396fb52eb7f9e5">IcsSoftSerialClass::g_enpin</a></div><div class="ttdeci">byte g_enpin</div><div class="ttdoc">イネーブルピン(送受信を切り替える)のピン番号を格納しておく変数 </div><div class="ttdef"><b>Definition:</b> IcsSoftSerialClass.h:54</div></div>
+<div class="ttc" id="class_ics_soft_serial_class_html_a3c1befd78c2233fbfb8a159b9f6ee62f"><div class="ttname"><a href="class_ics_soft_serial_class.html#a3c1befd78c2233fbfb8a159b9f6ee62f">IcsSoftSerialClass::enHigh</a></div><div class="ttdeci">void enHigh()</div><div class="ttdoc">enPinに割り当てられているピンをHにする </div><div class="ttdef"><b>Definition:</b> IcsSoftSerialClass.h:71</div></div>
+<div class="ttc" id="class_ics_soft_serial_class_html_afd46b796d368cb7cba51c6bac0d2d864"><div class="ttname"><a href="class_ics_soft_serial_class.html#afd46b796d368cb7cba51c6bac0d2d864">IcsSoftSerialClass::synchronize</a></div><div class="ttdeci">virtual bool synchronize(byte *txBuf, byte txLen, byte *rxBuf, byte rxLen)</div><div class="ttdoc">ICS通信の送受信 </div><div class="ttdef"><b>Definition:</b> IcsSoftSerialClass.cpp:175</div></div>
+<div class="ttc" id="class_ics_soft_serial_class_html_a6ccaa7ad49b7123a98c78d90c3ae9404"><div class="ttname"><a href="class_ics_soft_serial_class.html#a6ccaa7ad49b7123a98c78d90c3ae9404">IcsSoftSerialClass::icsSoftSerial</a></div><div class="ttdeci">KoCustamSoftSerial * icsSoftSerial</div><div class="ttdoc">arudinoのシリアル型のポインタを格納 </div><div class="ttdef"><b>Definition:</b> IcsSoftSerialClass.h:53</div></div>
+<div class="ttc" id="class_ics_base_class_html"><div class="ttname"><a href="class_ics_base_class.html">IcsBaseClass</a></div><div class="ttdoc">近藤科学のICS 3.5/3.6 サーボモータをマイコン経由で動作させるための基クラス </div><div class="ttdef"><b>Definition:</b> IcsBaseClass.h:62</div></div>
+<div class="ttc" id="class_ics_soft_serial_class_html_a9f2d5e67d748426eda81c94806ee8601"><div class="ttname"><a href="class_ics_soft_serial_class.html#a9f2d5e67d748426eda81c94806ee8601">IcsSoftSerialClass::begin</a></div><div class="ttdeci">virtual bool begin()</div><div class="ttdoc">通信の初期設定 </div><div class="ttdef"><b>Definition:</b> IcsSoftSerialClass.cpp:108</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
+</body>
+</html>
